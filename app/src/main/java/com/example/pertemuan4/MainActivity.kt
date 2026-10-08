@@ -20,15 +20,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    ActivitasPertama(
+                        modifier = Modifier.padding(innerPadding),
                     )
+
                 }
             }
         }
     }
 }
+    
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
