@@ -49,6 +49,7 @@ fun ActivitasPertama(modifier: Modifier, cardColors: Nothing?.(Long) -> CardColo
             )
         ) {
             Row() {
+            }
                 Column() {
                     Text(
                         stringResource(id = R.string.nama),
@@ -61,7 +62,7 @@ fun ActivitasPertama(modifier: Modifier, cardColors: Nothing?.(Long) -> CardColo
                         stringResource(id = R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
-                        modifier = Modifier.padding(top = 15.dp))
+                        modifier = Modifier.padding(top = 15.dp)
                     )
                 }
             }
@@ -69,5 +70,14 @@ fun ActivitasPertama(modifier: Modifier, cardColors: Nothing?.(Long) -> CardColo
         Box(
             modifier = Modifier
                 .fillMaxSize()
-        ) {}
+        ) {
+            Text(
+                stringResource(id = R.string.copy),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+
+        }
+}
 
